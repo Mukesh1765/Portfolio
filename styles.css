@@ -211,6 +211,9 @@ section {
         flex-direction: row;
         gap: 80px;
     }
+    .achievements {
+        padding: 60px 20px;
+    }
 }
 
 .education,
@@ -960,4 +963,588 @@ footer {
 .footer-bottom .alt-text {
     color: #888;
     margin-left: 4px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background: rgb(192, 188, 188);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.modal-close:hover {
+    color: #000;
+    background: #f0f0f0;
+}
+
+/* Modal Content Styling */
+.modal-content h2 {
+    margin: 0 0 25px 0;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.modal-section {
+    margin-bottom: 30px;
+}
+
+.modal-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.modal-section h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.modal-section p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.modal-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.modal-section ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+}
+
+.modal-section ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal-section ul.tech-list li {
+    padding: 5px 0;
+    padding-left: 25px;
+}
+
+/* Modal Links */
+.modal-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.github-btn {
+    background: #24292e;
+    color: white;
+}
+
+.github-btn:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.demo-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.demo-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+/* Make project-link clickable */
+.project-link {
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateX(5px);
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 30px 20px;
+        max-width: 95%;
+        margin: 20px auto;
+    }
+
+    .modal-content h2 {
+        font-size: 26px;
+        padding-right: 30px;
+    }
+
+    .modal-intro {
+        font-size: 16px;
+    }
+
+    .modal-section h3 {
+        font-size: 20px;
+    }
+
+    .modal-section h4 {
+        font-size: 16px;
+    }
+
+    .modal-links {
+        flex-direction: column;
+    }
+
+    .modal-btn {
+        width: 100%;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 10px;
+    }
+
+    .modal-content {
+        padding: 25px 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 22px;
+    }
+
+    .modal-intro {
+        font-size: 15px;
+    }
+
+    .modal-section h3 {
+        font-size: 18px;
+    }
+
+    .modal-section h4 {
+        font-size: 15px;
+    }
+
+    .modal-section ul li {
+        font-size: 14px;
+    }
+
+    .achievements {
+        padding: 50px 15px;
+    }
+}
+
+.installation-steps {
+    list-style: decimal;
+    padding-left: 20px;
+    color: #666;
+}
+
+.installation-steps li {
+    padding: 12px 0;
+    padding-left: 10px;
+}
+
+.installation-steps li::marker {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.installation-steps pre {
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    overflow-x: auto;
+    border-left: 3px solid #4CAF50;
+}
+
+.installation-steps code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+.installation-steps p code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* Ensure the intro paragraph stands out */
+.project-intro {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.gameplay-steps {
+    list-style: decimal;
+    padding-left: 20px;
+    color: #666;
+}
+
+.gameplay-steps li {
+    padding: 10px 0;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
+.gameplay-steps li::marker {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.gameplay-steps ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.gameplay-steps ul li {
+    padding: 4px 0;
+}
+
+.gameplay-steps ul li::before {
+    display: none;
+}
+
+.tech-highlight {
+    background: #f0f7ff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #2196F3;
+    margin: 20px 0;
+}
+
+.tech-highlight ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-highlight ul li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tech-highlight ul li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+/* Function table styling */
+.function-table {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.function-table p {
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.function-table p:last-child {
+    border-bottom: none;
+}
+
+.function-table strong {
+    color: #2196F3;
+    font-family: 'Courier New', monospace;
+}
+
+/* Code blocks for data structures */
+.modal-section pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    border-left: 3px solid #2196F3;
+    margin: 15px 0;
+}
+
+.modal-section code {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.modal-section p code {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #d63384;
+}
+
+.achievements {
+    padding: 60px 20px 10px 20px;
+    background: #fafafa;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: fit-content;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.scroll-to-top:active {
+    transform: translateY(-2px);
+}
+
+.scroll-to-top svg {
+    animation: bounceUp 2s infinite;
+}
+
+@keyframes bounceUp {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 30px 25px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-left .logo {
+        font-size: 28px;
+    }
+
+    .footer-left .name {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .scroll-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-left .logo {
+        font-size: 24px;
+    }
+
+    .footer-left .name {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .scroll-to-top svg {
+        width: 18px;
+        height: 18px;
+    }
 }

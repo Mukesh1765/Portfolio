@@ -1,375 +1,1056 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nainar Mukesh Sai - Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="#home" aria-label="Home">
-                    <img src="logo.png" alt="Logo" class="logo-image" />
-                </a>
-                <a href="#home" aria-label="Nainar Mukesh Sai">
-                    <strong><span>Nainar Mukesh Sai</span></strong>
-                </a>
-            </div>
-            <nav>
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Project</a>
-            </nav>
-        </header>
 
-        <main>
-            <!-- Hero Section -->
-            <section class="hero" id="home">
-                <h1>Hello,<br />World.</h1>
-                <div class="hero-content">
-                    <p>
-                        <span class="emoji" aria-hidden="true">👋</span> My name
-                        is Mukesh Sai. I'm an
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nainar Mukesh Sai - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home" aria-label="Home">
+                <img src="logo.png" alt="Logo" class="logo-image" />
+            </a>
+            <a href="#home" aria-label="Nainar Mukesh Sai">
+                <strong><span>Nainar Mukesh Sai</span></strong>
+            </a>
+        </div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1>Hello,<br />World.</h1>
+            <div class="hero-content">
+                <p>
+                    <span class="emoji" aria-hidden="true">👋</span> My name
+                    is Mukesh Sai. I'm an
+                </p>
+                <p>upcoming intern at arista networks</p>
+                <p>currently studying at VNIT Nagpur.</p>
+                <p>Check out my work below!</p>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <svg viewBox="0 0 30 50">
+                    <path d="M15 5 L15 40 M15 40 L10 35 M15 40 L20 35" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Education & Skills Section -->
+        <section class="education-skills" id="about">
+            <h2 class="section-title">Academic Background</h2>
+
+            <div class="content-wrapper">
+                <!-- Education Timeline -->
+                <article class="education">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="label">Bachelor of Technology</span>
+                                <h4>
+                                    Visvesvaraya National Institute of
+                                    Technology
+                                </h4>
+                                <time class="date">Aug 2023 - Present</time>
+                                <p class="location">Nagpur, Maharashtra</p>
+                                <p class="description">
+                                    At VNIT, I've gained a strong foundation
+                                    in computer science and hands-on
+                                    experience through projects, hackathons,
+                                    and club activities. Working alongside
+                                    passionate peers and mentors pushed me
+                                    to think critically, innovate, and build
+                                    solutions with real impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="label">Intermediate</span>
+                                <h4>Sri Chaitanya Junior College</h4>
+                                <time class="date">June 2021 - May 2023</time>
+                                <p class="location">
+                                    Tirupati, Andhra Pradesh
+                                </p>
+                                <p class="description">
+                                    My intermediate years were a phase of
+                                    deep academic focus and self-discipline.
+                                    I developed a strong foundation in
+                                    mathematics and science, which sparked
+                                    my interest in technology and
+                                    problem-solving. This period helped me
+                                    build the analytical mindset that
+                                    continues to guide my learning journey
+                                    today.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="label">10<sup>th</sup> Class</span>
+                                <h4>Spring Dale Public School</h4>
+                                <time class="date">June 2020 - March 2021</time>
+                                <p class="location">
+                                    Tirupati, Andhra Pradesh
+                                </p>
+                                <p class="description">
+                                    My school years laid the groundwork for
+                                    curiosity, consistency, and a love for
+                                    learning. Scoring well academically and
+                                    participating in extracurricular
+                                    activities helped me grow both
+                                    intellectually and personally. It was
+                                    during this time that I began to dream
+                                    big and set clear goals for my future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technical Skills -->
+                <article class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-tree">
+                        <details class="skill-category" open>
+                            <summary class="category-header">
+                                <h4>Languages</h4>
+                                <span class="toggle-icon" aria-hidden="true">▼</span>
+                            </summary>
+                            <ul class="skill-branches">
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">C</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">C++</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Java</span>
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details class="skill-category" open>
+                            <summary class="category-header">
+                                <h4>Frontend</h4>
+                                <span class="toggle-icon" aria-hidden="true">▼</span>
+                            </summary>
+                            <ul class="skill-branches">
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">HTML5</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">CSS3</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Javascript</span>
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details class="skill-category" open>
+                            <summary class="category-header">
+                                <h4>Backend</h4>
+                                <span class="toggle-icon" aria-hidden="true">▼</span>
+                            </summary>
+                            <ul class="skill-branches">
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Node Js</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">SQL</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">MongoDB</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Restful API</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">JWT(Authorization)</span>
+                                </li>
+                            </ul>
+                        </details>
+
+                        <details class="skill-category" open>
+                            <summary class="category-header">
+                                <h4>Frameworks & Libraries</h4>
+                                <span class="toggle-icon" aria-hidden="true">▼</span>
+                            </summary>
+                            <ul class="skill-branches">
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">React js</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Express js</span>
+                                </li>
+                                <li class="skill-item">
+                                    <span class="skill-connector"></span>
+                                    <span class="skill-name">Bootstrap & Tailwind</span>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Position of Responsibility Section -->
+        <section class="positions" id="por">
+            <h2 class="section-title">Position of Responsibility</h2>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-left">
+                        <span class="label">T&P Secretary</span>
+                        <time class="date">Nov 2024 - Present</time>
+                        <p class="location">VNIT, Nagpur</p>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Training and Placement Secretary</h3>
+                        <p class="description">
+                            Every day, I engage in opportunities that
+                            strengthen my professional skills and broaden my
+                            perspective on real-world challenges. One of the
+                            most rewarding aspects of this journey is
+                            working alongside a dedicated team that inspires
+                            growth, collaboration, and excellence.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-left">
+                        <span class="label">AAC Content Writer</span>
+                        <time class="date">Nov 2024 - May 2025</time>
+                        <p class="location">VNIT, Nagpur</p>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Ashlesha Club Content Writer</h3>
+                        <p class="description">
+                            From designing engaging infographics and writing
+                            astronomy articles to creating visuals that
+                            simplify complex cosmic phenomena, each project
+                            offered a unique blend of scientific exploration
+                            and creative storytelling.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-slide" id="pro1">
+                <div class="project-content-left">
+                    <span class="project-number">01</span>
+                    <h2>Chat-App</h2>
+                    <p class="project-description">
+                        A real-time chat application with user
+                        authentication and responsive design.
                     </p>
-                    <p>upcoming intern at arista networks</p>
-                    <p>currently studying at VNIT Nagpur.</p>
-                    <p>Check out my work below!</p>
+                    <div class="project-link" onclick="openModal('modal-chat-app')">
+                        view project
+                    </div>
                 </div>
-                <div class="scroll-indicator" aria-hidden="true">
-                    <svg viewBox="0 0 30 50">
-                        <path d="M15 5 L15 40 M15 40 L10 35 M15 40 L20 35" />
-                    </svg>
+            </div>
+            <div class="modal-overlay" id="modal-chat-app" onclick="closeModal('modal-chat-app')">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal('modal-chat-app')">
+                        &times;
+                    </button>
+
+                    <h2>Chat-App</h2>
+
+                    <div class="modal-section">
+                        <p class="project-intro">
+                            <strong>Chat-App</strong> is a real-time
+                            messaging application designed to provide
+                            seamless communication between users. Built with
+                            React, Node.js, and Tailwind CSS, it delivers
+                            instant message updates, a modern responsive
+                            interface, and secure user authentication for a
+                            smooth chatting experience.
+                        </p>
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>
+                                <strong>Real-Time Messaging:</strong> Send
+                                and receive messages instantly using
+                                Socket.IO for live updates.
+                            </li>
+                            <li>
+                                <strong>User Authentication:</strong> Secure
+                                login and registration with proper session
+                                handling and cookies.
+                            </li>
+                            <li>
+                                <strong>Responsive Design:</strong> Tailwind
+                                CSS ensures the interface adapts to mobile,
+                                tablet, and desktop screens.
+                            </li>
+                            <li>
+                                <strong>Modern UI:</strong> Clean and
+                                intuitive interface built using React
+                                components.
+                            </li>
+                            <li>
+                                <strong>Client-Server Communication:</strong>
+                                Axios is used for API calls to the backend,
+                                ensuring smooth data exchange.
+                            </li>
+                        </ul>
+
+                        <h3>Tech Stack</h3>
+
+                        <h4>Frontend:</h4>
+                        <ul>
+                            <li>ReactJS for UI development</li>
+                            <li>Tailwind CSS for responsive styling</li>
+                            <li>
+                                React Router DOM for client-side routing
+                            </li>
+                            <li>Axios for API requests</li>
+                            <li>
+                                Socket.IO Client for real-time messaging
+                            </li>
+                        </ul>
+
+                        <h4>Backend:</h4>
+                        <ul>
+                            <li>
+                                Node.js for server-side JavaScript runtime
+                            </li>
+                            <li>Express.js for building API routes</li>
+                            <li>
+                                Socket.IO Server for handling real-time
+                                events
+                            </li>
+                            <li>Js-cookie for managing session tokens</li>
+                        </ul>
+
+                        <h3>Installation & Setup</h3>
+                        <ol class="installation-steps">
+                            <li>
+                                Clone the repository:
+                                <pre><code>git clone https://github.com/Mukesh1765/Chat-App.git
+cd Chat-App</code></pre>
+                            </li>
+                            <li>
+                                Navigate to the client directory:
+                                <pre><code>cd client</code></pre>
+                            </li>
+                            <li>
+                                Install client-side dependencies:
+                                <pre><code>npm install</code></pre>
+                            </li>
+                            <li>
+                                Start the development server:
+                                <pre><code>npm run dev</code></pre>
+                                <p style="margin-top: 8px; font-size: 14px">
+                                    Server runs typically on
+                                    <code>http://localhost:5173</code>.
+                                </p>
+                            </li>
+                            <li>
+                                Setup backend (if included): Install server
+                                dependencies and start the server in the
+                                project root.
+                            </li>
+                        </ol>
+
+                        <h3>Usage</h3>
+                        <p>
+                            Users can register or log in to the app, join
+                            chat sessions, and send messages in real-time.
+                            Online presence and message delivery happen
+                            instantly through Socket.IO.
+                        </p>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="https://github.com/Mukesh1765/Chat-App" target="_blank" class="modal-btn github-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Education & Skills Section -->
-            <section class="education-skills" id="about">
-                <h2 class="section-title">Academic Background</h2>
-
-                <div class="content-wrapper">
-                    <!-- Education Timeline -->
-                    <article class="education">
-                        <h3>Education</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="label"
-                                        >Bachelor of Technology</span
-                                    >
-                                    <h4>
-                                        Visvesvaraya National Institute of
-                                        Technology
-                                    </h4>
-                                    <time class="date">Aug 2023 - Present</time>
-                                    <p class="location">Nagpur, Maharashtra</p>
-                                    <p class="description">
-                                        At VNIT, I've gained a strong foundation
-                                        in computer science and hands-on
-                                        experience through projects, hackathons,
-                                        and club activities. Working alongside
-                                        passionate peers and mentors pushed me
-                                        to think critically, innovate, and build
-                                        solutions with real impact.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="label">Intermediate</span>
-                                    <h4>Sri Chaitanya Junior College</h4>
-                                    <time class="date"
-                                        >June 2021 - May 2023</time
-                                    >
-                                    <p class="location">
-                                        Tirupati, Andhra Pradesh
-                                    </p>
-                                    <p class="description">
-                                        My intermediate years were a phase of
-                                        deep academic focus and self-discipline.
-                                        I developed a strong foundation in
-                                        mathematics and science, which sparked
-                                        my interest in technology and
-                                        problem-solving. This period helped me
-                                        build the analytical mindset that
-                                        continues to guide my learning journey
-                                        today.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="label"
-                                        >10<sup>th</sup> Class</span
-                                    >
-                                    <h4>Spring Dale Public School</h4>
-                                    <time class="date"
-                                        >June 2020 - March 2021</time
-                                    >
-                                    <p class="location">
-                                        Tirupati, Andhra Pradesh
-                                    </p>
-                                    <p class="description">
-                                        My school years laid the groundwork for
-                                        curiosity, consistency, and a love for
-                                        learning. Scoring well academically and
-                                        participating in extracurricular
-                                        activities helped me grow both
-                                        intellectually and personally. It was
-                                        during this time that I began to dream
-                                        big and set clear goals for my future.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Technical Skills -->
-                    <article class="skills">
-                        <h3>Technical Skills</h3>
-                        <div class="skills-tree">
-                            <details class="skill-category" open>
-                                <summary class="category-header">
-                                    <h4>Languages</h4>
-                                    <span class="toggle-icon" aria-hidden="true"
-                                        >▼</span
-                                    >
-                                </summary>
-                                <ul class="skill-branches">
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">C</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">C++</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">Java</span>
-                                    </li>
-                                </ul>
-                            </details>
-
-                            <details class="skill-category" open>
-                                <summary class="category-header">
-                                    <h4>Frontend</h4>
-                                    <span class="toggle-icon" aria-hidden="true"
-                                        >▼</span
-                                    >
-                                </summary>
-                                <ul class="skill-branches">
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">HTML5</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">CSS3</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name"
-                                            >Javascript</span
-                                        >
-                                    </li>
-                                </ul>
-                            </details>
-
-                            <details class="skill-category" open>
-                                <summary class="category-header">
-                                    <h4>Backend</h4>
-                                    <span class="toggle-icon" aria-hidden="true"
-                                        >▼</span
-                                    >
-                                </summary>
-                                <ul class="skill-branches">
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">Node Js</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">SQL</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">MongoDB</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name"
-                                            >Restful API</span
-                                        >
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name"
-                                            >JWT(Authorization)</span
-                                        >
-                                    </li>
-                                </ul>
-                            </details>
-
-                            <details class="skill-category" open>
-                                <summary class="category-header">
-                                    <h4>Frameworks & Libraries</h4>
-                                    <span class="toggle-icon" aria-hidden="true"
-                                        >▼</span
-                                    >
-                                </summary>
-                                <ul class="skill-branches">
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name">React js</span>
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name"
-                                            >Express js</span
-                                        >
-                                    </li>
-                                    <li class="skill-item">
-                                        <span class="skill-connector"></span>
-                                        <span class="skill-name"
-                                            >Bootstrap & Tailwind</span
-                                        >
-                                    </li>
-                                </ul>
-                            </details>
-                        </div>
-                    </article>
+            <div class="project-slide reverse" id="pro2">
+                <div class="project-image-left"></div>
+                <div class="project-content-right">
+                    <span class="project-number">02</span>
+                    <h2>Code Collabify</h2>
+                    <p class="project-description">
+                        Collaborative coding platform with live sharing and
+                        version control.
+                    </p>
+                    <div class="project-link" onclick="openModal('modal2')">
+                        view project
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="modal-overlay" id="modal2" onclick="closeModal('modal2')">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal('modal2')">
+                        &times;
+                    </button>
 
-            <!-- Position of Responsibility Section -->
-            <section class="positions" id="por">
-                <h2 class="section-title">Position of Responsibility</h2>
+                    <h2>CodeCollabify</h2>
 
+                    <div class="modal-section">
+                        <p class="modal-intro">
+                            <strong>CodeCollabify</strong> is a real-time
+                            collaborative coding platform designed to
+                            enhance team-based coding experiences. With a
+                            powerful Monaco code editor, live output
+                            display, and an integrated chat system, it
+                            provides a seamless environment for coding and
+                            communication.
+                        </p>
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>
+                                <strong>Real-Time Collaborative Code
+                                    Editor:</strong>
+                                Work simultaneously with your team in a
+                                shared coding environment powered by Monaco
+                                Editor.
+                            </li>
+                            <li>
+                                <strong>Live Output Display:</strong> See
+                                the results of your code instantly in the
+                                output panel.
+                            </li>
+                            <li>
+                                <strong>WebSocket Integration:</strong>
+                                Instant code synchronization across all
+                                connected users for a smooth collaborative
+                                experience.
+                            </li>
+                            <li>
+                                <strong>Integrated Chat System:</strong>
+                                Communicate with your team directly within
+                                the platform without needing external tools.
+                            </li>
+                            <li>
+                                <strong>Responsive Design:</strong> The
+                                layout adapts to various screen sizes,
+                                making the platform accessible on both
+                                desktop and mobile devices.
+                            </li>
+                            <li>
+                                <strong>Room Management:</strong> Create or
+                                join rooms with unique IDs, and see who's
+                                currently collaborating with you.
+                            </li>
+                        </ul>
+
+                        <h3>Tech Stack</h3>
+
+                        <h4>Frontend:</h4>
+                        <ul class="tech-list">
+                            <li>ReactJS</li>
+                            <li>Monaco Editor</li>
+                            <li>Tailwind CSS for styling</li>
+                            <li>WebSocket for real-time communication</li>
+                        </ul>
+
+                        <h4>Backend:</h4>
+                        <ul class="tech-list">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>WebSocket for handling real-time events</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="https://github.com/Mukesh1765/real-time-code-editor" target="_blank"
+                            class="modal-btn github-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide" id="pro3">
+                <div class="project-content-left">
+                    <span class="project-number">03</span>
+                    <h2>Snake And Ladders</h2>
+                    <p class="project-description">
+                        A fun and interactive game of Snake and Ladders with
+                        multiplayer upto 6 players.
+                    </p>
+                    <div class="project-link" onclick="openModal('modal-snake-ladder')">
+                        view project
+                    </div>
+                </div>
+            </div>
+            <div class="modal-overlay" id="modal-snake-ladder" onclick="closeModal('modal-snake-ladder')">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal('modal-snake-ladder')">
+                        &times;
+                    </button>
+
+                    <h2>Snake and Ladder Game</h2>
+
+                    <div class="modal-section">
+                        <p class="project-intro">
+                            A web-based implementation of the classic
+                            <strong>Snake and Ladder</strong> game. Built
+                            using HTML, CSS, and JavaScript, this game
+                            provides an interactive and visually engaging
+                            experience for players.
+                        </p>
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>
+                                <strong>Two-player and multi-player
+                                    gameplay:</strong>
+                                Turn-based game supporting multiple players
+                            </li>
+                            <li>
+                                <strong>Animated dice rolls:</strong> Smooth
+                                and interactive dice rolling animation
+                            </li>
+                            <li>
+                                <strong>Automatic token movement:</strong>
+                                Snakes and ladders with seamless player
+                                transitions
+                            </li>
+                            <li>
+                                <strong>Unique colored player tokens:</strong>
+                                Distinct visual representation for each
+                                player
+                            </li>
+                            <li>
+                                <strong>Winner popup announcement:</strong>
+                                Celebratory message when a player wins
+                            </li>
+                            <li>
+                                <strong>Restart game functionality:</strong>
+                                Quick reset to start a new game
+                            </li>
+                        </ul>
+
+                        <h3>How to Play</h3>
+                        <ol class="gameplay-steps">
+                            <li>Open index.html in your browser</li>
+                            <li>
+                                Choose game mode: Human vs Human or Human vs
+                                Computer
+                            </li>
+                            <li>Click "Roll Dice" on your turn</li>
+                            <li>Your token moves based on dice roll</li>
+                            <li>
+                                Landing on:
+                                <ul style="
+                                            margin-top: 8px;
+                                            margin-bottom: 0;
+                                        ">
+                                    <li>
+                                        The base of a ladder - you move up
+                                    </li>
+                                    <li>
+                                        The head of a snake - you slide down
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>First player to reach cell 100 wins</li>
+                        </ol>
+
+                        <h3>Game Rules</h3>
+                        <ul>
+                            <li>
+                                Players roll a die each turn and move
+                                forward accordingly
+                            </li>
+                            <li>
+                                Landing exactly on a
+                                <strong>ladder base</strong> moves the
+                                player up
+                            </li>
+                            <li>
+                                Landing exactly on a
+                                <strong>snake head</strong> moves the player
+                                down
+                            </li>
+                            <li>
+                                Rolling a <strong>6</strong> grants another
+                                turn
+                            </li>
+                            <li>Moves that exceed 100 are ignored</li>
+                        </ul>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li><strong>HTML5</strong> – Structure</li>
+                            <li>
+                                <strong>CSS3</strong> – Styling & animations
+                            </li>
+                            <li>
+                                <strong>JavaScript</strong> – Game logic and
+                                interaction
+                            </li>
+                        </ul>
+
+                        <h3>Project Motivation</h3>
+                        <p>This project was built to:</p>
+                        <ul>
+                            <li>
+                                Practice
+                                <strong>DOM manipulation</strong> using
+                                JavaScript
+                            </li>
+                            <li>
+                                Implement
+                                <strong>canvas-based animation</strong> for
+                                player tokens
+                            </li>
+                            <li>
+                                Understand
+                                <strong>event-driven logic</strong> in
+                                interactive web games
+                            </li>
+                            <li>
+                                Provide a modern and nostalgic gaming
+                                experience
+                            </li>
+                        </ul>
+
+                        <h3>Known Issues</h3>
+                        <ul>
+                            <li>
+                                Ensure all required images are placed inside
+                                the images/ folder
+                            </li>
+                            <li>
+                                The game requires JavaScript enabled in your
+                                browser
+                            </li>
+                            <li>
+                                Optimized for desktop viewports (mobile
+                                improvements coming soon)
+                            </li>
+                        </ul>
+
+                        <h3>Enhancements</h3>
+                        <ul>
+                            <li>Support for upto 6 players</li>
+                            <li>Single-player mode with AI</li>
+                            <li>Background music and sound effects</li>
+                            <li>Mobile responsiveness and touch support</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="https://github.com/Mukesh1765/Snake-And-Ladders" target="_blank"
+                            class="modal-btn github-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="https://snake-and-ladders-zeta.vercel.app/" target="_blank" class="modal-btn demo-btn">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide reverse" id="pro4">
+                <div class="project-image-left"></div>
+                <div class="project-content-right">
+                    <span class="project-number">04</span>
+                    <h2>Family Expense Tracking System</h2>
+                    <p class="project-description">
+                        A comprehensive tool for tracking and managing
+                        family expenses.
+                    </p>
+                    <div class="project-link" onclick="openModal('modal-expense-tracker')">
+                        view project
+                    </div>
+                </div>
+            </div>
+            <div class="modal-overlay" id="modal-expense-tracker" onclick="closeModal('modal-expense-tracker')">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal('modal-expense-tracker')">
+                        &times;
+                    </button>
+
+                    <h2>Family Expense Tracking System</h2>
+
+                    <div class="modal-section">
+                        <p class="project-intro">
+                            This C-based project implements a powerful
+                            <strong>Family Expense Tracking System</strong>
+                            that enables efficient management and analysis
+                            of personal and household expenses. It supports
+                            real-time user and family tracking with a focus
+                            on performance, structure, and data integrity.
+                        </p>
+
+                        <div class="tech-highlight">
+                            <p><strong>The system uses:</strong></p>
+                            <ul style="margin-top: 10px">
+                                <li>
+                                    <strong>AVL Tree</strong> for managing
+                                    users
+                                </li>
+                                <li>
+                                    <strong>B-Tree</strong> for managing
+                                    families
+                                </li>
+                                <li>
+                                    <strong>B-Tree</strong> for managing
+                                    expenses
+                                </li>
+                            </ul>
+                            <p style="margin-top: 10px; font-style: italic">
+                                All data is initialized via file handling
+                                from unsorted input, and loaded into sorted
+                                structures dynamically at runtime.
+                            </p>
+                        </div>
+
+                        <h3>Core Functionalities</h3>
+                        <ul>
+                            <li>
+                                Add and manage individual users using
+                                <strong>AVL Tree</strong> (sorted by User
+                                ID)
+                            </li>
+                            <li>
+                                Add and manage expense records using
+                                <strong>B-Tree</strong> (sorted by User ID
+                                and Expense ID)
+                            </li>
+                            <li>
+                                Create and manage families using
+                                <strong>B-Tree</strong> (sorted by Family
+                                ID)
+                            </li>
+                            <li>
+                                File handling support for loading initial
+                                unsorted data
+                            </li>
+                        </ul>
+
+                        <h3>Expense Analytics</h3>
+                        <ul>
+                            <li>
+                                <strong>Get Total Family Expense</strong> –
+                                with income vs expense comparison
+                            </li>
+                            <li>
+                                <strong>Categorical Expense Analysis</strong>
+                                – total and individual-wise breakdown per
+                                category
+                            </li>
+                            <li>
+                                <strong>Highest Expense Day</strong> – find
+                                the date with maximum family expense
+                            </li>
+                            <li>
+                                <strong>Individual Expense Report</strong> –
+                                category-wise breakdown in descending order
+                            </li>
+                            <li>
+                                <strong>Period-Based Expense Query</strong>
+                                – all expenses between two dates
+                            </li>
+                            <li>
+                                <strong>Range-Based Expense Query</strong> –
+                                all expenses between two expense IDs for a
+                                user
+                            </li>
+                        </ul>
+
+                        <h3>System Intelligence</h3>
+                        <ul>
+                            <li>
+                                Automatically deletes family if last member
+                                is removed
+                            </li>
+                            <li>
+                                Auto-updates family income and expense when
+                                individual/expense is updated
+                            </li>
+                            <li>
+                                Tree-based searching and updates in
+                                <strong>O(log n)</strong> time
+                            </li>
+                            <li>
+                                If user is removed, all their expenses are
+                                removed and contributions are updated
+                            </li>
+                            <li>Input validations in all functions</li>
+                        </ul>
+
+                        <h3>File Handling</h3>
+                        <p>
+                            Supports file-based initialization with unsorted
+                            data, which is parsed and inserted into:
+                        </p>
+                        <ul>
+                            <li>
+                                <code>users.txt</code> – at least 25 user
+                                records
+                            </li>
+                            <li>
+                                <code>families.txt</code> – at least 10
+                                families (1–4 members each)
+                            </li>
+                            <li>
+                                <code>expenses.txt</code> – at least 40
+                                expenses across multiple categories
+                            </li>
+                        </ul>
+
+                        <h3>Data Structures</h3>
+
+                        <h4>Individual (AVL Tree)</h4>
+                        <pre><code>typedef struct user {
+    int user_ID;             // Unique ID (1-1000)
+    char user_name[100];
+    float income;
+} user;
+
+typedef struct user_node {
+    user data;
+    int height;              // For AVL balancing
+    struct user_node *left, *right;
+} user_tree_node;</code></pre>
+
+                        <h4>Expense (B-Tree)</h4>
+                        <pre><code>typedef struct expense {
+    int expense_ID;
+    int user_ID;             // Linked to User ID
+    char expense_category[MAX_SIZE];
+    float expense_amount;
+    Date date_of_expense;
+} expense;
+
+typedef struct expense_tree_node {
+    expense deck[ORDER];
+    struct expense_tree_node *children[ORDER + 1];
+    int keys;
+} expense_tree_node;</code></pre>
+
+                        <h4>Family (B-Tree)</h4>
+                        <pre><code>typedef struct family {
+    int family_ID;
+    char family_name[MAX_NAME_LENGTH];
+    int total_members;
+    int family_members_user_id[MAX_USERS];
+    float total_family_income;
+    float total_family_expense;
+} family;
+
+typedef struct family_node {
+    family deck[ORDER];
+    struct family_node* children[ORDER + 1];
+    int keys;
+} family_tree_node;</code></pre>
+
+                        <h3>Key Functions</h3>
+                        <div class="function-table">
+                            <p>
+                                <strong>AddUser()</strong> – Adds a new user
+                                to AVL Tree (sorted by user_ID)
+                            </p>
+                            <p>
+                                <strong>AddExpense()</strong> – Adds a new
+                                expense into B-Tree (grouped by user, sorted
+                                by expense_ID)
+                            </p>
+                            <p>
+                                <strong>CreateFamily()</strong> – Creates a
+                                family of 1–4 members, calculates income and
+                                expenses
+                            </p>
+                            <p>
+                                <strong>Update_or_delete_individual_Family_details()</strong>
+                                – Updates/deletes user or family. Auto-syncs
+                                related data
+                            </p>
+                            <p>
+                                <strong>Update_delete_expense()</strong> –
+                                Updates/deletes an expense. Recalculates
+                                totals
+                            </p>
+                            <p>
+                                <strong>Get_total_expense()</strong> –
+                                Prints family expense and whether it exceeds
+                                income
+                            </p>
+                            <p>
+                                <strong>Get_categorical_expense(category)</strong>
+                                – Shows total & individual expense per
+                                category
+                            </p>
+                            <p>
+                                <strong>Get_highest_expense_day()</strong> –
+                                Finds the day with highest family spending
+                            </p>
+                            <p>
+                                <strong>Get_individual_expense(userID)</strong>
+                                – Shows individual monthly & category-wise
+                                expense
+                            </p>
+                            <p>
+                                <strong>Get_expense_in_period(Date1,
+                                    Date2)</strong>
+                                – Lists expenses within a given date range
+                            </p>
+                            <p>
+                                <strong>Get_expense_in_range(ID1, ID2,
+                                    userID)</strong>
+                                – Lists expenses in ID range for a user
+                            </p>
+                        </div>
+
+                        <h3>Compilation & Execution</h3>
+                        <pre><code>gcc projectTrees.c -o expense_tracker
+./expense_tracker</code></pre>
+                        <p style="margin-top: 10px">
+                            Ensure <code>users.txt</code>,
+                            <code>families.txt</code>, and
+                            <code>expenses.txt</code> exist in the same
+                            directory with valid unsorted data.
+                        </p>
+
+                        <h3>Assumptions</h3>
+                        <ul>
+                            <li>Max number of users: 1000</li>
+                            <li>Max number of expenses: 1000</li>
+                            <li>Max number of families: 100</li>
+                            <li>
+                                Unique user and expense IDs in range 1–1000
+                            </li>
+                            <li>Each family has 1 to 4 users</li>
+                            <li>
+                                Income/Expense: Float values (2 decimal
+                                precision)
+                            </li>
+                            <li>Assume 10 days in each month</li>
+                            <li>
+                                All input is initially unsorted and gets
+                                sorted upon insertion
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="https://github.com/Mukesh1765/expense-tracking-using-btrees-and-avltrees/"
+                            target="_blank" class="modal-btn github-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements" id="achievements">
+            <h2 class="section-title">Achievements</h2>
+            <article class="education">
                 <div class="timeline">
-                    <article class="timeline-item">
+                    <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-left">
-                            <span class="label">T&P Secretary</span>
-                            <time class="date">Nov 2024 - Present</time>
-                            <p class="location">VNIT, Nagpur</p>
+                        <div class="timeline-content">
+                            <span class="label">JEE Mains<span>
+                                    <h4>
+                                        Joint Entrance Examination (JEE)
+                                    </h4>
+                                    <p class="description">
+                                        In 2023, I secured an All India Rank of 8442 in the highly competitive JEE Mains
+                                        examination, reflecting my strong foundation in mathematics, physics, and
+                                        chemistry. This achievement demonstrates my dedication, problem-solving skills,
+                                        and ability to perform under pressure. It also highlights my commitment to
+                                        academic excellence and my drive to tackle challenging concepts, qualities that
+                                        I bring to every project and learning opportunity I pursue.
+                                    </p>
                         </div>
-                        <div class="timeline-right">
-                            <h3>Training and Placement Secretary</h3>
-                            <p class="description">
-                                Every day, I engage in opportunities that
-                                strengthen my professional skills and broaden my
-                                perspective on real-world challenges. One of the
-                                most rewarding aspects of this journey is
-                                working alongside a dedicated team that inspires
-                                growth, collaboration, and excellence.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-left">
-                            <span class="label">AAC Content Writer</span>
-                            <time class="date">Nov 2024 - May 2025</time>
-                            <p class="location">VNIT, Nagpur</p>
-                        </div>
-                        <div class="timeline-right">
-                            <h3>Ashlesha Club Content Writer</h3>
-                            <p class="description">
-                                From designing engaging infographics and writing
-                                astronomy articles to creating visuals that
-                                simplify complex cosmic phenomena, each project
-                                offered a unique blend of scientific exploration
-                                and creative storytelling.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="projects" id="projects">
-                <h2 class="section-title">Projects</h2>
-                <div class="project-slide" id="pro1">
-                    <div class="project-content-left">
-                        <span class="project-number">01</span>
-                        <h2>Chat-App</h2>
-                        <p class="project-description">
-                            A real-time chat application with user
-                            authentication and responsive design.
-                        </p>
-                        <a href="#" class="project-link">view project</a>
                     </div>
                 </div>
+            </article>
+        </section>
+    </main>
 
-                <div class="project-slide reverse" id="pro2">
-                    <div class="project-image-left"></div>
-                    <div class="project-content-right">
-                        <span class="project-number">02</span>
-                        <h2>Code Collabify</h2>
-                        <p class="project-description">
-                            Collaborative coding platform with live sharing and
-                            version control.
-                        </p>
-                        <a href="#" class="project-link">view project</a>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <span class="logo">NMS</span>
+            <span class="name">Nainar Mukesh Sai</span>
+        </div>
 
-                <div class="project-slide" id="pro3">
-                    <div class="project-content-left">
-                        <span class="project-number">03</span>
-                        <h2>Snake And Ladders</h2>
-                        <p class="project-description">
-                            A fun and interactive game of Snake and Ladders with
-                            multiplayer upto 6 players.
-                        </p>
-                        <a href="#" class="project-link">view project</a>
-                    </div>
-                </div>
+        <div class="footer-links">
+            <a href="mailto:mukeshnainar2006@gmail.com">Mail</a>
+            <a href="https://www.linkedin.com/in/mukesh-sai-679966324/">LinkedIn</a>
+            <a href="https://github.com/Mukesh1765">GitHub</a>
+        </div>
 
-                <div class="project-slide reverse" id="pro4">
-                    <div class="project-image-left"></div>
-                    <div class="project-content-right">
-                        <span class="project-number">04</span>
-                        <h2>Family Expense Tracking System</h2>
-                        <p class="project-description">
-                            A comprehensive tool for tracking and managing
-                            family expenses.
-                        </p>
-                        <a href="#" class="project-link">view project</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <div class="footer-bottom">
+            <p>谢谢你。<span class="alt-text">Salamat po. 🙌🏽</span></p>
+        </div>
 
-        <footer class="footer">
-            <div class="footer-left">
-                <span class="logo">NMS</span>
-                <span class="name">Nainar Mukesh Sai</span>
-            </div>
+        <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+    </footer>
+</body>
 
-            <div class="footer-links">
-                <a href="mailto:mukeshnainar2006@gmail.com">Mail</a>
-                <a href="https://www.linkedin.com/in/mukesh-sai-679966324/"
-                    >LinkedIn</a
-                >
-                <a href="https://github.com/Mukesh1765">GitHub</a>
-            </div>
-
-            <div class="footer-bottom">
-                <p>谢谢你。<span class="alt-text">Salamat po. 🙌🏽</span></p>
-            </div>
-        </footer>
-    </body>
 </html>
